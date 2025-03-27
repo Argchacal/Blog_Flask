@@ -1,0 +1,147 @@
+html {
+    font-family: lato, sans-serif;
+}
+
+body{
+    background-color: #121212;
+    color: #e1e1e1;
+}
+
+a {
+    color: rgba(0, 0, 255, 0.61);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;/* esto hace que cuando pase el mause por el enlace se subrraye*/
+}
+
+.barra{
+    max-width: 840px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.logo_barra{
+    display: flex;
+    color: rgba(0, 0, 255, 0.61);
+    font-weight: bold;/* negrita*/
+}
+
+.logo_barra img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.barra_navegacion {
+    display: flex;
+    flex-direction: row;
+}
+
+.barra_navegacion_item {
+    margin-left: 50px;
+}
+
+.main {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form_label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 1px 0px;
+}
+
+.title, .form_texarea {
+    width: 650px;
+    font-size: 18px;
+    padding:  10px 0px;/* esto cambia el espacio entre la texto y el siguiente*/
+    background-color: #2d2d2d;
+    
+}
+
+.form_texarea {
+    max-width: 650px;
+}
+.form_submit {
+    background-color: #1e88e5;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.form_submit:hover {/* se usa_hover para cuando pasa el mause por arriba*/
+    background-color: #1565c0;/*se oscurece el botom*/
+}
+
+.entrada{
+    background-color: #1f1f1f;
+    margin-top: 50px;
+}
+
+.entrada_titulo {
+    display: inline;
+    font-size: 16px;
+}
+
+.entrada_dato {
+    color: "1e88e5";
+    font-style: italic;
+}
+
+.entrada_contenido {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.footer {
+    background-color: #1f1f1f;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 4px solid #1e88e5;
+    font-size: 12px;
+
+}
+.footer_contenido {
+    max-width:  640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:  row;
+}
+
+.footer .derecha {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .isquierda {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_columna {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.footer_item {
+    margin-bottom: 5px;
+    text-decoration: none;
+}

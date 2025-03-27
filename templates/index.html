@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <head class="barra">
+        <div class="logo_barra">
+            <img src="../static/css/pymateando-favicon-color.png" alt="Logo">
+            <h1 class="titulo_encabezado">Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="barra_navegacion_item" href = "#" ><a href="#" class="barra_navegacion_link">Recientes</a></li>
+                <li class="barra_navegacion_item" href = "#" ><a href="#" class="barra_navegacion_link">Calendario</a></li>
+                <li class="barra_navegacion_item" href = "#" ><a href="#" class="barra_navegacion_link">Contacto</a></li>
+      
+        </nav>
+
+    </head>
+    <main class="main">
+            <section>
+                <h2>Nueva entrada</h2>
+                <form action="form" method="post">
+                    <p class="form_entrada">
+                        <label for="titulo" class="form_label">Titulo:</label>
+                        <input type="text"  name="tit" id="titulo" class="title">
+                    </p>
+                    <p class="form_entrada">
+                        <label for="entrada" class="form_label">Contenido:</label>
+                        <textarea name="Contenido" id="entrada" class="form_texarea"></textarea>   
+                    </p>
+                    <button type="submit" class="form_submit">Agregar</button>
+                </form>
+            </section>
+            <section class="entrada">
+                <h2>Ulimas Entradas</h2>
+                <article>
+                    <div>
+                    <h3 class="entrada_titulo">Aprendiendo Flask</h3>
+                    <time datetime="26-02-2025" class="entrada_date">*26-3-2025</time>
+                    <p class="entrada_contenido">Hoy empece hacer el diceño de mi html del blog</p>
+
+                    </div>
+                </article>
+            </section>
+    <footer class="footer">
+        <div class="footer_contenido">
+            <section class="derecha">
+                <a href="footer_item"> Crado por Marcelo Ayala</a>
+                <a href="footer_item">Gracias a Ivan Espinoza por la guia</a>
+            </section>
+            <section class="isquierda">
+                <a href="footer_item"> Reciente </a>
+                <a href="footer_item">Calendario</a>
+                <a href="footer_item">Contacto</a>
+                <div class="footer_columna">
+                    <a href="footer_item">Acerca de</a>
+                    <a href="footer_item">Como fue hecho esto</a>
+                </div>
+            </section>
+
+        </div>
+        
+    </footer>
+</body>
+</html>

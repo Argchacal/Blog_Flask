@@ -68,7 +68,8 @@ a:hover {
     font-size: 18px;
     padding:  10px 0px;/* esto cambia el espacio entre la texto y el siguiente*/
     background-color: #2d2d2d;
-    
+    border: none;
+    color: #e1e1e1;
 }
 
 .form_texarea {

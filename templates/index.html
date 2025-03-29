@@ -24,7 +24,7 @@
     <main class="main">
             <section>
                 <h2>Nueva entrada</h2>
-                <form action="form" method="post">
+                <form class="form" method="post">
                     <p class="form_entrada">
                         <label for="titulo" class="form_label">Titulo:</label>
                         <input type="text"  name="tit" id="titulo" class="title">
@@ -36,16 +36,19 @@
                     <button type="submit" class="form_submit">Agregar</button>
                 </form>
             </section>
-            <section class="entrada">
                 <h2>Ulimas Entradas</h2>
-                <article>
-                    <div>
-                    <h3 class="entrada_titulo">Aprendiendo Flask</h3>
-                    <time datetime="26-02-2025" class="entrada_dato">*26-3-2025</time>
-                    <p class="entrada_contenido">Hoy empece hacer el diceño de mi html del blog</p>
-
-                    </div>
+                {% for entrada in entrada %}
+                <section class="entrada">
+                    
+                    <article>
+                        <div>
+                        <h3 class="entrada_titulo">{{entrada.titulo}}</h3>
+                        <time datetime={{entrada.fecha_formato}} class="entrada_dato">{{entrada.fecha}}</time>
+                        <p class="entrada_contenido">{{entrada.contenido}}</p>
+                        
+                        </div>
                 </article>
+                {% endfor%}
             </section>
     <footer class="footer">
         <div class="footer_contenido">
